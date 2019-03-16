@@ -1,0 +1,23 @@
+service: aws-node-simple-http-endpoint
+
+frameworkVersion: ">=1.1.0 <2.0.0"
+
+plugins:
+  - serverless-offline
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-west-2
+
+functions:
+  hello:
+    handler: handler.hello
+
+  currentTime:
+    handler: handler.endpoint
+    events:
+      - http:
+          path: hello-world
+          method: post
+

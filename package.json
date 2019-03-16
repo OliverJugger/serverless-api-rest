@@ -1,0 +1,16 @@
+{
+  "name": "aws-node-simple-http-endpoint",
+  "version": "1.0.0",
+  "description": "Example demonstrates how to setup a simple HTTP GET endpoint",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "serverless offline"
+  },
+  "devDependencies": {
+    "serverless-offline": "^4.6.0"
+  },
+  "dependencies": {
+    "object-to-xml": "^2.0.0"
+  }
+}
